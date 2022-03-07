@@ -6,7 +6,7 @@ import java.io.Serializable;
 /**
  * (Test)实体类
  *
- * @author makejava
+ * @author macia
  * @since 2022-03-07 23:34:04
  */
 public class Test implements Serializable {
