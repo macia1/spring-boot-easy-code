@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS comment;
+CREATE TABLE comment
+(
+    ID             BIGINT       NOT NULL COMMENT '主键ID'
+        PRIMARY KEY,
+    CONTENT        VARCHAR(120) NOT NULL COMMENT '评论内容',
+    PARENTS_ID     BIGINT       NULL COMMENT '评论父ID',
+    ARTICLE_ID     BIGINT       NOT NULL COMMENT '文章ID',
+    COMMENT_LEVEL  BIGINT       NOT NULL COMMENT '评论等级',
+    STATUS         BIGINT       NOT NULL COMMENT '评论状态',
+    LIKES          BIGINT       NULL COMMENT '点赞数',
+    REPLAY_COMMENT BIGINT       NULL
+)
+    COMMENT '评论列表' CHARSET = UTF8MB4;
