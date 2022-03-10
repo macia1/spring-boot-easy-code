@@ -7,7 +7,10 @@ spring:
     password: toor
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
-
+  jpa:
+    show-sql: true
+  application:
+    name: spring-boot-code
 mybatis:
   mapper-locations: classpath:/mapper/*Dao.xml
   typeAliasesPackage: com.easy.springbooteasycode.entity
